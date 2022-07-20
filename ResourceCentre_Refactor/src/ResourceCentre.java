@@ -21,13 +21,13 @@ public class ResourceCentre {
 
 		int option = 0;
 
-		while (option != OPTION_QUIT) {
+		while (option != OPTION_QUIT) { 
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
 
 			if (option == OPTION_VIEW) {
-				// View all items
+				// View all items 
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
 
@@ -140,7 +140,11 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			output += String.format("%-85s\n",camcorderList.get(i).toString());
+
+			output += String.format("%-84s\n",camcorderList.get(i).toString());
+
+			
+
 
 		}
 		return output;
@@ -153,12 +157,13 @@ public class ResourceCentre {
 		System.out.println(output);
 	}
 
+
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-85s\n", chromebookList.get(i).toString());
+			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}

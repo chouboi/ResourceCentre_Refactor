@@ -12,7 +12,6 @@ public class Item {
 		this.isAvailable = true;
 	}
 	
-	
 	public String toString() {
 		
 		// Write your codes here
@@ -25,7 +24,6 @@ public class Item {
 		return itemInfo;
 
 	}
-
 
 	public static String showAvailability(boolean isAvailable) {
 

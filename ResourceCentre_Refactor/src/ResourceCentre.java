@@ -9,7 +9,6 @@ public class ResourceCentre {
 	private static final int OPTION_VIEW = 1;
 	private static final int OPTION_QUIT = 5;
 	
-
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -141,6 +140,8 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
+			output += String.format("%-85s\n",camcorderList.get(i).toString());
+
 			output += String.format("%-84s \n", camcorderList.get(i).toString());
 
 		}
@@ -159,7 +160,7 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-84s\n", chromebookList.get(i).toString());
+			output += String.format("%-85s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}

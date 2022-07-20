@@ -11,6 +11,8 @@ public class Item {
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
+	
+	
 	public String toString() {
 		
 		// Write your codes here
@@ -20,10 +22,13 @@ public class Item {
 				description,
 				showAvailability(isAvailable),
 				dueDate);
-		
 		return itemInfo;
+
 	}
+
+
 	public static String showAvailability(boolean isAvailable) {
+
 		String avail;
 
 		if (isAvailable == true) {
@@ -37,7 +42,7 @@ public class Item {
 	public String getAssetTag() {
 		return assetTag;
 	}
-
+	
 	public String getDescription() {
 		return description;
 	}

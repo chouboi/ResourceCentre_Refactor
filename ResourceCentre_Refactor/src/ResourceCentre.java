@@ -8,10 +8,7 @@ public class ResourceCentre {
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
 	private static final int OPTION_QUIT = 5;
-
-
 	
-
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -24,13 +21,13 @@ public class ResourceCentre {
 
 		int option = 0;
 
-		while (option != OPTION_QUIT) {
+		while (option != OPTION_QUIT) { 
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");
 
 			if (option == OPTION_VIEW) {
-				// View all items
+				// View all items 
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
 
@@ -143,7 +140,7 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			output += String.format("%-84s\n", camcorderList.get(i).toString());
+			output += String.format("%-84s\n",camcorderList.get(i).toString());
 
 		}
 		return output;

@@ -142,8 +142,6 @@ public class ResourceCentre {
 
 			output += String.format("%-85s\n",camcorderList.get(i).toString());
 
-			output += String.format("%-84s \n", camcorderList.get(i).toString());
-
 		}
 		return output;
 	}

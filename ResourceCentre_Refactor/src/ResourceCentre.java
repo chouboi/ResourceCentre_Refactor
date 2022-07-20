@@ -21,7 +21,7 @@ public class ResourceCentre {
 
 		int option = 0;
 
-		while (option != OPTION_QUIT) {
+		while (option != OPTION_QUIT) { 
 
 			ResourceCentre.menu();
 			option = Helper.readInt("Enter an option > ");

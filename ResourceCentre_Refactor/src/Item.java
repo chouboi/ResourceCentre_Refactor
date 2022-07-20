@@ -12,7 +12,7 @@ public class Item {
 		this.isAvailable = true;
 	}
 	
-	public String toString() {
+	public String toString() { 
 		
 		// Write your codes here
 		String itemInfo = "";

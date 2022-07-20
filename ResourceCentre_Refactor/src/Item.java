@@ -27,7 +27,7 @@ public class Item {
 	}
 
 
-	public static String showAvailability(boolean isAvailable) {
+	public String showAvailability(boolean isAvailable) {
 
 		String avail;
 		if (isAvailable == true) {

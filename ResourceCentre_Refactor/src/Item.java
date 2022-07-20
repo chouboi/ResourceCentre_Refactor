@@ -16,14 +16,16 @@ public class Item {
 		// Write your codes here
 		String itemInfo = String.format("%-10s %-30s %-10s %-10s", 
 				assetTag,
-				description, 
+				description,
 				showAvailability(isAvailable),
 				dueDate);
 		
 		return itemInfo;
 	}
+
 	
 	public String showAvailability(boolean isAvailable) {
+
 		String avail;
 
 		if (isAvailable == true) {

@@ -98,7 +98,10 @@ public class ResourceCentre {
 
 	}
 
-	public static void itemTypeMenu() {
+	/**
+	 * 
+	 */
+	private static void itemTypeMenu() {
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
 		System.out.println("2. Chromebook");
@@ -139,6 +142,7 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 
 			output += String.format("%-84s \n", camcorderList.get(i).toString());
+
 		}
 		return output;
 	}
@@ -155,10 +159,7 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
-					chromebookList.get(i).getDescription(), 
-					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
-					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
+			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}

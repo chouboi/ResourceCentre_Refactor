@@ -18,7 +18,7 @@ public class Item {
 
 		String itemInfo= "";
 
-		itemInfo = String.format("%-10s %-30s %-10s %-10s ", 
+		itemInfo = String.format("%-11s %-30s %-10s %-10s ", 
 				assetTag,
 
 				description,

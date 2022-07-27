@@ -140,11 +140,11 @@ public class ResourceCentre {
 
 		//demo CI/CD
 
-		for (Camcorder j : camcorderList) {
+		for (Camcorder i : camcorderList) {
 
 
 
-			output += j.toString();
+			output += i.toString();
 
 			
 

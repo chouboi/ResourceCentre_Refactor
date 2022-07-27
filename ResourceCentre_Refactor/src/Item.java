@@ -12,10 +12,10 @@ public class Item {
 		this.isAvailable = true;
 	}
 	
-	
-	public String toString() {
+	public String toString() { 
 		
 		// Write your codes here
+
 		String itemInfo= "";
 		itemInfo = String.format("%-10s %-30s %-10s %-11s", 
 				assetTag,
@@ -26,10 +26,10 @@ public class Item {
 
 	}
 
-
 	public String showAvailability(boolean isAvailable) {
 
 		String avail;
+
 		if (isAvailable == true) {
 			avail = "Yes";
 		} else {

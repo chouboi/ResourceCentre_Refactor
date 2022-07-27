@@ -7,7 +7,7 @@ public class Chromebook extends Item{
 	}
 
 	public String getOs() {
-		return os;
+		return os; 
 	}
 	
 	public String toString(){
@@ -15,7 +15,10 @@ public class Chromebook extends Item{
 		// Write your codes here
 		String output = "";
 		output = super.toString();
+
 		output = String.format("%-20s\n",os);
+
+	
 		return output;
 		
 

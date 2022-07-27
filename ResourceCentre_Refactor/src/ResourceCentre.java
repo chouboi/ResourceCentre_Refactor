@@ -139,7 +139,7 @@ public class ResourceCentre {
 		String output = "";
 
 		//demo CI/CD
-		for (Camcorder i : camcorderList) {
+		for (Camcorder i :  camcorderList) {
 
 
 			output += i.toString();

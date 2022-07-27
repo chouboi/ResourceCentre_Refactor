@@ -17,8 +17,10 @@ public class Item {
 		// Write your codes here
 
 		String itemInfo= "";
+
 		itemInfo = String.format("%-10s %-30s %-10s %-10s ", 
 				assetTag,
+
 				description,
 				showAvailability(isAvailable),
 				dueDate);

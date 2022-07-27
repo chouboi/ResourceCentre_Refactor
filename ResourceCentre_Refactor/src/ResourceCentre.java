@@ -139,10 +139,10 @@ public class ResourceCentre {
 		String output = "";
 
 		//demo CI/CD
-		for (Camcorder i : camcorderList) {
+		for (Camcorder j : camcorderList) {
 
 
-			output += i.toString();
+			output += j.toString();
 
 			
 
@@ -164,9 +164,9 @@ public class ResourceCentre {
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
-		for (Chromebook i : chromebookList) {
+		for (Chromebook j : chromebookList) {
 
-			output +=i.toString();
+			output +=j.toString();
 		}
 		return output;
 	}

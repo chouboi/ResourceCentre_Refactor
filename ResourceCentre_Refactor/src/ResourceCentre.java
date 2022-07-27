@@ -138,9 +138,10 @@ public class ResourceCentre {
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
 
-		for (int i = 0; i < camcorderList.size(); i++) {
+		//demo CI/CD
+		for (Camcorder i : camcorderList) {
 
-			output += String.format("%-84s\n",camcorderList.get(i).toString());
+			output += i.toString();
 
 			
 
@@ -158,9 +159,9 @@ public class ResourceCentre {
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
-		for (int i = 0; i < chromebookList.size(); i++) {
+		for (Chromebook i : chromebookList) {
 
-			output += String.format("%-84s\n", chromebookList.get(i).toString());
+			output +=i.toString();
 		}
 		return output;
 	}
